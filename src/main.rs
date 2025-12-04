@@ -1,6 +1,7 @@
 mod day_1;
 mod day_3;
 mod day_4;
+pub mod utils;
 
 fn main() {
   day_1::day_1();

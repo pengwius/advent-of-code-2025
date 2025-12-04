@@ -1,16 +1,4 @@
-use std::fs::File;
-use std::io::{BufRead, BufReader};
-
-fn read_lines(file_path: &str) -> std::io::Result<Vec<String>> {
-  let file = File::open(file_path)?;
-  let reader = BufReader::new(file);
-  let lines: Vec<String> = reader
-    .lines()
-    .map(|line| line.unwrap())
-    .collect();
-
-  Ok(lines)
-}
+use crate::utils::read_lines::read_lines;
 
 fn part_1() {
   let input = read_lines("src/day_1/input.txt").unwrap();
