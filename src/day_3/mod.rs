@@ -12,7 +12,7 @@ fn read_lines(file_path: &str) -> std::io::Result<Vec<String>> {
   Ok(lines)
 }
 
-fn part1() {
+fn part_1() {
   let input = read_lines("src/day_3/input.txt").unwrap();
 
   let mut answer: u32 = 0;
@@ -45,7 +45,7 @@ fn part1() {
   println!("{}", answer);
 }
 
-fn part2() {
+fn part_2() {
   let input = read_lines("src/day_3/input.txt").unwrap();
 
   let mut answer: u128 = 0;
@@ -83,6 +83,6 @@ fn part2() {
 }
 
 pub fn day_3() {
-  part1();
-  part2();
+  part_1();
+  part_2();
 }
