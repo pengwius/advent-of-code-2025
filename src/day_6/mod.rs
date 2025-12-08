@@ -68,12 +68,12 @@ fn part_2() {
 
   let mut splitted_lines: Vec<Vec<&str>> = Vec::new();
 
-  for mut line in &mut input {
+  for line in &mut input {
     for space in &spaces_positions {
       line.replace_range(space..=space, ",");
     }
 
-    let mut splitted_line: Vec<&str> = line
+    let splitted_line: Vec<&str> = line
       .split(",")
       .collect::<Vec<&str>>();
     
